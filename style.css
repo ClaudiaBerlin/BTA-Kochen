@@ -1,0 +1,52 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  margin: 0;
+}
+
+/**
+Alle Links sollen:
+1.Schriftfarbe schwarz
+2.Nicht mehr unterstrichen
+3.Nur große Buchstaben
+4.fette Schrift
+*/
+
+a {
+  color: black;
+  text-transform: uppercase; /*Großbuchstaben*/
+  text-decoration: none; /*ohne Unterstrich*/
+  font-weight: bold; /*fette schrift*/
+}
+
+#button {
+  border: none;
+  background-color: transparent;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav {
+  display: none;
+}
+
+/*Media Query für große Bildschirme*/
+@media (min-width: 960px) {
+  #button {
+    display: none; /*ab 960px soll button nicht mehr angezeigt werden für PC Ansicht*/
+  }
+
+  nav {
+    display: block;
+  }
+}
